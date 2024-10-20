@@ -1,16 +1,20 @@
 #include "raylib.h"
 
 int main() {
-
-  InitWindow(640, 480, "TESTING, BITCH!");
-
-    while (!WindowShouldClose()) {
-      BeginDrawing();
-      ClearBackground(WHITE);
-      EndDrawing();
+  InitWindow(1200, 600, "name");
+  int i = 1;
+  while (!WindowShouldClose()) {
+    if (i % 2000 == 0) {
+      i = 1;
+      HideCursor();
+    } else {
+        i++;
+        ShowCursor();
     }
-
-    CloseWindow();
-
-    return 0;
+    BeginDrawing();
+    ClearBackground(BLUE);
+    EndDrawing();
+    }
+  CloseWindow();
+  return 0;
 }
