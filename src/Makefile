@@ -20,7 +20,7 @@ endif
 INCLUDE_PATHS += -I. -I/usr/include
 
 # Define project variables
-PROJECT_NAME = raylib_game
+PROJECT_NAME = game
 PROJECT_SOURCE_FILES = main.cpp
 PROJECT_BUILD_PATH = .
 
